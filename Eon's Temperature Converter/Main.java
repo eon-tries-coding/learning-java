@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner myObj = new Scanner(System.in);
-
         System.out.println("Welcome to Eon's Temperature Converter!");
 
         System.out.print("What's your name? ");
