@@ -1,0 +1,21 @@
+main:
+what is player name?;
+- ANSWER
+nice to meet you, ANSWER;
+
+startLearnMore:
+would you like to learn more about the world?;
+- Y or N
+    - if Y, run, then run startTutorial;
+    - if N, run startTutorial;
+    - if something else, state incorrect and run startLearnMore again;
+
+startTutorial:
+would you like to start the tutorial?;
+- Y or N
+    - if Y, run, then run startGame;
+    - if N, run startGame;
+    - if something else, state incorrect and run startTutorial again;
+
+startGame:
+*insert description of setting, then where player is*
