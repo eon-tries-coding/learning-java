@@ -10,12 +10,10 @@ public class TempConverter {
 
         System.out.print("Hello, " + name + "! ");
 
-        convertTemperature(name);
+        convertTemperature(name, args);
     }
 
-//Need to make these separate functions so I can call them again without restarting the whole program
-
-public static void convertTemperature(String name) {
+public static void convertTemperature(String name, String[] args) {
         Scanner myObj = new Scanner(System.in);
 
         System.out.println("What temperature do you want to convert? (Enter a number): ");
@@ -41,13 +39,13 @@ public static void convertTemperature(String name) {
         myObj.nextLine();
 
         if (again.equals("Y") || again.equals("y")) {
-            convertTemperature(again); // Restart the process
+            convertTemperature(name, args);
         } else if (again.equals("N") || again.equals("n")) {
-            System.out.println("Goodbye, " + name + "!"); //It calls the the answer from the if else statement in this function. This is incorrect. It should call the name from main.
+            System.out.println("Goodbye, " + name + "!");
         }
         else {
             System.out.println("Invalid input. Restarting...");
-            convertTemperature(name); // Restart the process
+            convertTemperature(name, args);
         }
     
     }
